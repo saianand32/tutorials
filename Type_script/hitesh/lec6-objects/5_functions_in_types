@@ -1,0 +1,13 @@
+// 1. adding function to type
+
+type Student = {
+    name: string,
+    getStudent : () => string //1st way
+    getMarks() : number //2nd way
+
+    getDetails: (id: number) => string [] //parametrized function way 1
+    getDetails2(id: number) : string [] //parametrized function way 2
+    
+}
+
+export {}
