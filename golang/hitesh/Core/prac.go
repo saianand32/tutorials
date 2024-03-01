@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type school struct {
 	schName string
 }
@@ -12,7 +14,15 @@ type Student struct {
 	school // Embedded struct
 }
 
+func fun() (name string, age int, gender string) {
+	return "sai", 21, "male"
+}
+
 func main() {
-	stud1 := Student{}
-	stud1.schName = "ssshss"
+
+	mp := map[string]int{}
+
+	mp["sai"]++
+
+	fmt.Println(mp)
 }
