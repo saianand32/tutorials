@@ -32,4 +32,8 @@ func main() {
 	fmt.Println(str)
 	// also can use Printf and Sprintf
 
+	fmt.Print()
+	fmt.Printf("")
+	fmt.Println()
+
 }

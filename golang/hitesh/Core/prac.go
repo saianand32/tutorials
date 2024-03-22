@@ -2,27 +2,15 @@ package main
 
 import "fmt"
 
-type school struct {
-	schName string
-}
-
-type Student struct {
-	Name   string
-	Age    int
-	Flag   bool
-	Grade  complex128
-	school // Embedded struct
-}
-
-func fun() (name string, age int, gender string) {
-	return "sai", 21, "male"
-}
-
 func main() {
+	// var name string = "sai"
 
-	mp := map[string]int{}
+	// name2 := "kkk"
 
-	mp["sai"]++
+	const name3 string = "99"
+	fmt.Println(name3)
 
-	fmt.Println(mp)
+	var age, marks, height = 1, 88, 5
+
+	fmt.Println(age, marks, height)
 }
