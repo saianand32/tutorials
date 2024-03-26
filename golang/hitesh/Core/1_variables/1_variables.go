@@ -119,4 +119,14 @@ func main() {
 	// float64
 	// complex128
 
+	// 4. (Any type in golang)   if u want to assign a type of "any" like in typescript
+
+	var anyVar interface{}
+
+	anyVar = 100
+	fmt.Println(anyVar) //100
+
+	anyVar = "saishwar"
+	fmt.Println(anyVar) //saishwar
+
 }

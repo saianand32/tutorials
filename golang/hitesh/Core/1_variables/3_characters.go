@@ -16,4 +16,9 @@ func main() {
 	// print Ascii val
 	fmt.Printf("character1 is %d \n", ch1) //65
 	fmt.Printf("character2 is %d \n", ch2) //83
+
+	var ch rune = 'A'
+	var name = "sai"
+	name = name + string(ch)
+	fmt.Printf("%T", ch)
 }

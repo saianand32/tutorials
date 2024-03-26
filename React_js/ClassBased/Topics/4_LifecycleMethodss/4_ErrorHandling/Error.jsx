@@ -11,7 +11,7 @@ class ErrorBoundary extends Component {
 // ----------------------------------------------------------
   // Error handle Lifecycle methods
 
-//   1. 
+//   1. componentDidCatch
   componentDidCatch(error, errorInfo) {
     console.error("Error caught by ErrorBoundary:", error, errorInfo);
     this.setState({ hasError: true });

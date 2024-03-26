@@ -76,7 +76,7 @@ $git reset <commit_id>
 
 s2 - $git push -f origin main //need to do a force push
 
-note - wen u do $git reset commit_id   ,the remaining commits changes go to staging area....
-if u want to delete them off use git stash and then git release
+note - wen u do $git reset commit_id ,the remaining commits changes go to staging area....
+if u want to delete them off use git stash and then git stash release
 but can do in one step
 $ git reset --hard commit_id //this doesnt get changes to staging area

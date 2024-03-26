@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -34,5 +36,22 @@ func main() {
 	fmt.Printf("%T", c) //complex128
 	fmt.Printf("%T", b) //bool
 	fmt.Printf("%T", i) //int
+
+	// 8. Printing go syntax for non primitive types like struct
+
+	type car struct {
+		engine string
+		cc     int
+		color  string
+	}
+
+	var car1 car = car{
+		engine: "saa",
+		cc:     400,
+		color:  "blue",
+	}
+
+	fmt.Printf("%v \n", car1)  //complex128boolint{saa 400 blue}
+	fmt.Printf("%#v \n", car1) //main.car{engine:"saa", cc:400, color:"blue"}  //this prints in a nice way
 
 }
