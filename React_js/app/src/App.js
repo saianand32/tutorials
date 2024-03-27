@@ -1,29 +1,42 @@
+import { useState, useEffect, Component } from 'react';
 import './App.css';
-import Border from './Border';
-import Test from './Test';
+import Memo from './Memo';
+import Refs from './Refs';
+import RefsFunctional from './RefsFunctional';
+import ForwardParent from './ForwardParent';
 
 
+class App extends Component{
 
-function App() {
-  console.log("app")
-  return (
-    <div className="App">
-      <Border>
-        <Test/>
-      </Border>
-    </div>
-  );
+  constructor(props){
+    super(props)
+      this.state = {
+        name:"sai"
+      }
+  }
+
+  componentDidMount(){
+  //   setInterval(() => { //basically resetting state to same thing
+  //     this.setState({
+  //       name:"sai"
+  //     })
+  // }, 1000)
+  }
+
+  componentDidUpdate(){
+    console.log("updated")
+  }
+
+
+  render(){
+    return (
+      <>
+         {/* <RefsFunctional/> */}
+         {/* <Refs/> */}
+         <ForwardParent/>
+      </>
+    )
+  }
 }
-
-
-
-const MyComp = () => {
-  return(
-    <>
-      <h1>Saishwar</h1>
-    </>
-  )
-}
-
 
 export default App;
