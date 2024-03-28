@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ForwardRef = ({heroName}) => {
+const MyComponent = ({heroName}) => {
     if(heroName === 'Joker') throw new Error('Not a hero')
 
   return (
@@ -8,4 +8,4 @@ const ForwardRef = ({heroName}) => {
   )
 }
 
-export default ForwardRef
+export default MyComponent

@@ -4,36 +4,27 @@ import Memo from './Memo';
 import Refs from './Refs';
 import RefsFunctional from './RefsFunctional';
 import ForwardParent from './ForwardParent';
+import ForwardRef from './ForwardRef';
+import ErrorBoundary from './ErrorBoundary';
 
 
-class App extends Component{
+class App extends Component {
 
-  constructor(props){
+  constructor(props) {
     super(props)
-      this.state = {
-        name:"sai"
-      }
+    this.state = {
+      name: "sai"
+    }
   }
 
-  componentDidMount(){
-  //   setInterval(() => { //basically resetting state to same thing
-  //     this.setState({
-  //       name:"sai"
-  //     })
-  // }, 1000)
-  }
-
-  componentDidUpdate(){
-    console.log("updated")
-  }
-
-
-  render(){
+  render() {
     return (
       <>
-         {/* <RefsFunctional/> */}
-         {/* <Refs/> */}
-         <ForwardParent/>
+        <ErrorBoundary>
+          <ForwardRef heroName={"saishwar"} />
+          <ForwardRef heroName={"Anand"} />
+          <ForwardRef heroName={"Joker"} />
+        </ErrorBoundary>
       </>
     )
   }

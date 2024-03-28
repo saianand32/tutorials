@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-var wg sync.WaitGroup //wg is a waitgroup  and is a pointer in general.. it has 3 methods Add(), Done() and Wait()
+var wg sync.WaitGroup //wg is a waitgroup and is a pointer in general.. it has 3 methods Add(), Done() and Wait()
 
 func main() {
 

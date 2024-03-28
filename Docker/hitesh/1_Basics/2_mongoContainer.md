@@ -22,7 +22,7 @@ $ docker exec -it <ContainerId> bash   //now u will see u r in a linux like term
  $ mongosh   //now mongosh starts (try "show dbs" commmand)
 
 
-4. to kill/stop a container from running use
+7. to kill/stop a container from running use
 
 $ docker stop <Image>  //always use this not kill
 $ docker kill <Image>
