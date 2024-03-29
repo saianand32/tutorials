@@ -1,0 +1,4 @@
+--- hoc is a pattern where a function takes a component as argument and 
+returns another component
+
+const EnhancedComp = HigherOrderComp(originalComp)

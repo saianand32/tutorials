@@ -2,21 +2,13 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"slices"
 )
 
 func main() {
-	jsonn := map[string]interface{}{}
+	slice := []int{}
 
-	jsonn["sai"] = 99
-	jsonn["anand"] = []int{1, 2, 3, 4}
-
-	// newJsn, _ := json.MarshalIndent(jsonn, "", "\t")
-	// fmt.Println(string(newJsn))
-	min := 12
-	max := 200000
-
-	num := rand.Intn(max-min+1) + min
-	fmt.Println(num)
+	slice = slices.Insert(slice, len(slice), 2)
+	fmt.Println(slice)
 
 }

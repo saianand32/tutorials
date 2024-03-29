@@ -26,7 +26,7 @@ type Student struct {
 func main() {
 	truck1 := truck{}
 	truck1.Model = "modv123" // directly acces the car properties as top level thats how its different from nested structs
-
+	fmt.Printf("%#v", truck1)
 	//Default values in structs
 	stud1 := Student{}
 	fmt.Println(stud1.Name)  //""

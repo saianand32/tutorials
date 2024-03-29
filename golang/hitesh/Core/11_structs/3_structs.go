@@ -8,7 +8,7 @@ type rectangle struct {
 }
 
 // Defining a method for a struct
-func (r rectangle) area() int {
+func (r *rectangle) area() int {
 	return r.length * r.width
 }
 
