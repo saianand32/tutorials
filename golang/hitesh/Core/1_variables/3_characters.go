@@ -20,5 +20,5 @@ func main() {
 	var ch rune = 'A'
 	var name = "sai"
 	name = name + string(ch)
-	fmt.Printf("%T", ch)
+	fmt.Printf("%T", ch) //int32
 }

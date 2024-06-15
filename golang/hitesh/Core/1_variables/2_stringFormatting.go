@@ -33,9 +33,9 @@ func main() {
 	// 7. for complex just use %v
 
 	// print Type of a variable (use %T to print type of variable)
-	fmt.Printf("%T", c) //complex128
-	fmt.Printf("%T", b) //bool
-	fmt.Printf("%T", i) //int
+	fmt.Printf("%T\n", c) //complex128
+	fmt.Printf("%T\n", b) //bool
+	fmt.Printf("%T\n", i) //int
 
 	// 8. Printing go syntax for non primitive types like struct
 
@@ -51,7 +51,7 @@ func main() {
 		color:  "blue",
 	}
 
-	fmt.Printf("%v \n", car1)  //complex128boolint{saa 400 blue}
+	fmt.Printf("%v \n", car1)  //{saa 400 blue}
 	fmt.Printf("%#v \n", car1) //main.car{engine:"saa", cc:400, color:"blue"}  //this prints in a nice way
 
 }

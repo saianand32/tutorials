@@ -129,4 +129,11 @@ func main() {
 	anyVar = "saishwar"
 	fmt.Println(anyVar) //saishwar
 
+	// can also use the keyword any
+	var anyType any = 9
+	fmt.Println(anyType)
+
+	anyType = "sai"
+	fmt.Println(anyType)
+
 }
