@@ -1,14 +1,9 @@
 package main
 
-import (
-	"fmt"
-	"slices"
-)
+import "fmt"
 
 func main() {
-	slice := []int{}
-
-	slice = slices.Insert(slice, len(slice), 2)
-	fmt.Println(slice)
+	str := "€h"
+	fmt.Println(len(str))
 
 }
