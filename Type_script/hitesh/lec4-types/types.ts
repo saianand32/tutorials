@@ -57,7 +57,7 @@ console.log(uid)
 
 let hero;
 
-function getHero(){
+function getHero() {
     return true;
 }
 
