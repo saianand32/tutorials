@@ -5,7 +5,7 @@
     $ Match ( n: PLAYER ) return n
 
 3. Select node using multiple labels
-    $ Match ( n: PLAYER, GUARD ) return n
+    $ Match ( n: PLAYER :GUARD ) return n
 
 4. Select node properties and Alias them
     $ Match ( n: PLAYER ) return n.age as Age, n.height as Height
