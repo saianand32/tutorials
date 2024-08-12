@@ -29,3 +29,21 @@ These notes provide a clearer structure and explanation of Docker's key componen
 DOCKER_FILE -----> DOCKER IMAGE -----> DOCKER CONTAINER
 
 -- When u run a docker file u get a docker image ... run the image u get a container 
+
+
+
+---- Shim
+if docker daemon goes down initially containers also go down but now its changed
+with intro to containerd & shim we now can have daemonless containers means even if daemon is down containers keep running as shim and containerd handle all ops. runc has only one job create delete containers it does it and shuts down then onward shim handles container communincation with containerd.
+
+in linux binary names are as follows --
+1. Docker Daemon --- dockerd
+2. containerd    --- docker-containerd
+3. shim          --- docker-containerd-shim
+4. runc          --- docker-runc
+
+
+
+---Docker server & client (advanced topics)
+-- client --- port 2375 ---> server
+must be TLS(transport layer security) secure
