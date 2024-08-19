@@ -36,6 +36,10 @@ $ docker rmi $(docker images -q)
 
 <!-- stop a container with id=ID -->
 -- docker stop ID
+-- docker kill ID    //this immediatly stops container
+
+<!-- start a container with id=ID -->
+-- docker start ID
 
 <!-- remove a container  -->
 -- docker rm ID

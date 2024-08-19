@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-// commands to run the tests - go test ./src/tests -v   //v is for verbose
+// commands to run the tests - {go test ./src/tests -v   //v is for verbose} OR {go test testHello/src/tests -v}
 // commands to run the benchmark - go test ./src/tests -bench=.
 
 func TestSayHello(t *testing.T) {
