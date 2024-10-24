@@ -9,7 +9,7 @@ import (
 // note: to run this package you will have to do -----
 
 //$ go build
-//$ ./greetingsProject    ----this is nmae of you proj in go.mod which will be name of executable from $go build
+//$ ./greetingsProject    ----this is name of you proj in go.mod which will be name of executable from $go build
 
 func main() {
 

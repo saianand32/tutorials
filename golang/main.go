@@ -1,17 +1,29 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"strconv"
+)
 
-var WhatIsThe = AnswerToLife()
+func main() {
 
-func AnswerToLife() int { // 1
-	return 42
+	if len(os.Args) < 2 {
+		fmt.Println("Please provide an argument")
+		return
+	}
+
+	strNum := os.Args[1] // The first argument
+
+	// Command-line arguments are always gotten as strings
+	num, err := strconv.Atoi(strNum) // Convert the string argument to an integer
+
+	if err != nil {
+		fmt.Println("couldnt convert to int")
+	}
+
+	fmt.Printf("Number argument = %d", num)
 }
 
-func init() { // 2
-	WhatIsThe = 0
-}
-
-func main() { // 3
-	fmt.Println(WhatIsThe)
-}
+// go run main.go 12
+// output --> Number argument = 12
