@@ -1,4 +1,5 @@
 
 
-a = "sai"
-print(a+a)
+a = 4
+b = ~a
+print(b)
