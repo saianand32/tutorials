@@ -75,3 +75,17 @@ fruits = ["apple", "banana", "cherry"]
 for index, fruit in enumerate(fruits):
     print(f"Index: {index}, Fruit: {fruit}")
 print("\n")
+
+# Example 11: for loop in reverse (using reversed())
+print("for loop in reverse (using reversed()):")
+fruits = ["apple", "banana", "cherry"]
+for fruit in reversed(fruits):
+    print(fruit)
+print("\n")
+
+# Example 12: for loop in reverse (using range with negative step)
+print("for loop in reverse (using range with negative step):")
+for i in range(4, -1, -1):  # Loops from 4 down to 0
+    print(fruits[i])
+print("\n")
+
