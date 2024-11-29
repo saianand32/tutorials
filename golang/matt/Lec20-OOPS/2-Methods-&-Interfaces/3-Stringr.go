@@ -16,6 +16,10 @@ func (s Student) String() string {
 	return fmt.Sprint(s.marks1 - s.marks2) // Returns the difference of marks1 and marks2
 }
 
+func PrintStringFromStringer(obj fmt.Stringer) string {
+	return obj.String()
+}
+
 func main() {
 	// In Go, the String() method allows us to control how an instance of a struct is printed when used with functions like fmt.Println.
 	// It behaves somewhat like the toString method in Java or the __str__ dunder method in Python.
@@ -30,4 +34,8 @@ func main() {
 	// When we print the student, the custom String() method is called, and it prints the difference between marks1 and marks2.
 	// Output: 7
 	fmt.Println(student) // This will print: 7
+
+	//using our custom Printstring method
+	fmt.Println(PrintStringFromStringer(student)) // This will print: 7
+
 }

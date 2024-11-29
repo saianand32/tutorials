@@ -44,7 +44,7 @@ func main() {
 
 	// NotStringer does NOT implement fmt.Stringer because it lacks a String() method.
 	var x NotStringer = 100
-	// s = x // Error: cannot assign x (of type NotStringer) to s (of type fmt.Stringer)
+	s = x // Error: cannot assign x (of type NotStringer) to s (of type fmt.Stringer)
 
 	// We can use type assertion to check if x satisfies Stringer or not:
 	// If x implements Stringer, s will be assigned the String method, otherwise it'll panic.
