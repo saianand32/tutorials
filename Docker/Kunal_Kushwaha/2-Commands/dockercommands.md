@@ -6,14 +6,14 @@
 
 ------------------------------------------------------------------------- 
 
-<!-- Print all images on machine -->
--- $ docker images
-
 <!-- Pulling images from docker hub  -->
 -- $ docker pull image_name
 
 <!-- remove one image with id  -->
 $ docker rmi <ID>
+
+%  Lists  all image
+$ docker images
 
 %  Lists  all image id's
 $ docker images -q 
@@ -28,7 +28,7 @@ $ docker rmi $(docker images -q)
 -------------------------------------------------------------------------
 
 <!-- Print all running containers  -->
--- $ docker ps
+-- $ docker ps 
 -- $ docker container ls
 
 <!-- Print all existing(running/non running) containers  -->
