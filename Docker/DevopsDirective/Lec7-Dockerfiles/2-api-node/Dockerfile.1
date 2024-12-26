@@ -1,0 +1,4 @@
+FROM ubuntu
+
+# combine 2 lines into one so that only one layer is formed for this 
+RUN apt update && apt install nodejs npm -y

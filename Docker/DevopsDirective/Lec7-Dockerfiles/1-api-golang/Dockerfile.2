@@ -1,0 +1,13 @@
+# Pin specific version for stability
+FROM golang:1.19-bullseye 
+
+WORKDIR /app
+
+COPY ./api-golang .
+
+RUN go mod download
+
+# Compile application during build rather than at runtime
+RUN go build -o api-golang
+
+CMD ["./api-golang"] 

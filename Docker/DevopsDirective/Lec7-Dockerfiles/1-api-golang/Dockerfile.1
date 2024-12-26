@@ -1,0 +1,10 @@
+# Pin specific version for stability
+FROM golang:1.19-bullseye
+
+WORKDIR /app
+
+COPY ./api-golang .
+
+RUN go mod download
+
+CMD ["go", "run", "./api-golang/main.go"] 
