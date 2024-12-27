@@ -49,3 +49,7 @@ Changes to be committed:
 
  //to clear the stash permanently
  $ git stash clear
+
+ 10. Amend most recent commit
+    $ git add .
+    $ git commit -m "new message" --amend
