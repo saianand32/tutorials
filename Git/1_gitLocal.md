@@ -33,7 +33,8 @@ Changes to be committed:
 
 6. $git commit -m "first commit" //to commit all changes
 
-7. $git log //prints a log of all commits
+7. $git log //prints a log of all commits before including head
+   $git log --all //prints a log of all commits before and after head including head
 
 8. $git reset ebb82265c5b48bc05015c9d4cef85f0d652bfae1    //reverts to this commit id and removes all the above commits
 // and the reverted items are moved to unstaged area not even on the staged area
